@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #FF69B4;
+  --secondary-color: #800080;
+  --text-color: #FFFFFF;
+  --background-start: #2E0E3F;
+  --background-end: #1A0B29;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(ellipse at top left, var(--background-start), var(--background-end));
+  background-attachment: fixed;
+  color: var(--text-color);
+  min-height: 100vh;
+  position: relative;
+  font-weight: 300;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(255, 105, 180, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(128, 0, 128, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 50% 100%, rgba(255, 105, 180, 0.1) 0%, transparent 30%);
+  pointer-events: none;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.about, .topics, .subscribe {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.subscribe input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribe button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .about, .topics, .subscribe {
+    padding: 30px 0;
+  }
+}

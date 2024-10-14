@@ -1,0 +1,65 @@
+.dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h1 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.dashboard h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.dashboard section {
+  margin-bottom: 40px;
+}
+
+.dashboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard li {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-title, .session-title {
+  font-weight: bold;
+}
+
+.content-type, .session-datetime {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.book-session-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.book-session-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
